@@ -70,7 +70,7 @@ grunt.initConfig({
 ```
 
 #### Multitask
-In this example, glossaries is used as a multitask, with custom options used for the first document in order to make glossaries output to a custom directory
+In this example, glossaries is used as a multitask, with a custom path to makeglossaries supplied
 
 ```js
 grunt.initConfig({
