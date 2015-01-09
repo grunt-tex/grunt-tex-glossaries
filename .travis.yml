@@ -6,5 +6,5 @@ before_install:
   - npm install
   - mkdir $HOME/ci-utils
   - curl -L https://github.com/grunt-tex/ci-utils/tarball/master | tar -zxpC $HOME/ci-utils --strip-components=1
-  - chmod +x $HOME/ci-utils/texlive/dist/bin/x86_64-linux/makeglossaries
   - PATH=$HOME/ci-utils/texlive/dist/bin/x86_64-linux:$PATH
+  - tlmgr install glossaries
