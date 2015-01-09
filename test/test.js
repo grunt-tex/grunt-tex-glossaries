@@ -44,7 +44,7 @@ describe("When there are makeglossaries errors", function () {
   });
 
   it("should output error message", function () {
-    expect(out).to.contain("Auxiliary file 'fail.fail.aux' doesn't exist. Have you run LaTeX?");
+    expect(out).to.contain("fail.aux' doesn't exist. Have you run LaTeX?");
     expect(out).to.contain("Fatal error: Unable to generate glossary for tmp/fail.fail");
   });
 

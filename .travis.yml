@@ -4,7 +4,7 @@ node_js:
 before_install:
   - npm install -g grunt-cli
   - npm install
-  - curl -L https://github.com/grunt-tex/ci-utils/tarball/master | tar -zxpC ~
-  - tar -xf $HOME/ci-utils/texlive/out/texlive.tar.xc
-install:
-  - PATH=$HOME/ci-utils/texlive/out/texlive/bin/x86_64-linux:$HOME/ci-utils/makeglossaries:$PATH
+  - mkdir $HOME/ci-utils
+  - curl -L https://github.com/grunt-tex/ci-utils/tarball/master | tar -zxpC $HOME/ci-utils --strip-components=1
+  - chmod +x $HOME/ci-utils/texlive/dist/bin/x86_64-linux/makeglossaries
+  - PATH=$HOME/ci-utils/texlive/dist/bin/x86_64-linux:$PATH

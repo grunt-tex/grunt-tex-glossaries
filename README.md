@@ -1,4 +1,4 @@
-# grunt-tex-glossaries
+# grunt-tex-glossaries [![Build Status](https://travis-ci.org/grunt-tex/grunt-tex-glossaries.svg?branch=master)](https://travis-ci.org/grunt-tex/grunt-tex-glossaries)
 
 Part of the [grunt-tex](https://github.com/grunt-tex) suite of LaTeX-orientated Grunt tasks.
 
